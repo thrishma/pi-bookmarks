@@ -1,0 +1,43 @@
+{
+  "name": "pi-bookmarks",
+  "version": "0.1.0",
+  "description": "Bookmark what you or the model said in pi, see them in a pane, and act on them: explain, TL;DR, find in code, verify, remember, pin into context, group",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "bookmarks",
+    "pins",
+    "notes"
+  ],
+  "author": "thrishma",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrishma/pi-bookmarks.git"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/bookmarks/index.ts"
+    ]
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "tsc -p .",
+    "test": "node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.4.0",
+    "@earendil-works/pi-tui": "^1.4.0",
+    "@types/node": "^24.19.2",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
